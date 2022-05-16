@@ -1,0 +1,66 @@
+body{
+    font-family: 'Raleway';
+}
+
+/* Cabeçalho*/
+header{
+    position: sticky;
+    top: 0;
+}
+
+.bg-light{
+    --bs-bg-opacity: 1;
+    background-color: rgb(255,255,255)!important;
+}
+
+.navbar{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+
+/*.navbar-dark .navbar-brand{
+    color: #52B788;
+}*/
+
+.navbar-brand{
+    margin-right: 3rem;
+    margin-left: 0.5%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding-left: 0.5rem;
+}
+
+.logo-img{
+    width: 2.5rem;
+    height: 1.9rem;
+    background-image: url(../img/logo.jpg);
+    background-repeat: round;
+    margin-bottom: 0.3125rem;
+}
+
+/*Elementos comuns em todas as páginas*/
+
+main{
+    height: 100vh;
+    padding: 1rem 2.5rem 1rem 5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 80%;
+    background-color: rgb(255,255,255);
+}

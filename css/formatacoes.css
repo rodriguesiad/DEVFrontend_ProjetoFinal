@@ -18,11 +18,6 @@ header{
     padding-bottom: 0.7rem;
 }
 
-
-/*.navbar-dark .navbar-brand{
-    color: #52B788;
-}*/
-
 .navbar-brand{
     margin-right: 3rem;
     margin-left: 0.5%;
@@ -46,13 +41,49 @@ header{
 
 main{
     height: 100vh;
-    padding: 1rem 2.5rem 1rem 5rem;
+    padding: 1rem 2.5rem 1rem 3rem;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     
+}
+
+.container{
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    width: 20vw;
+    justify-content: space-between;
+
+}
+
+.titulo{
+    box-sizing: border-box;
+    border-right: solid 2px rgb(0, 0, 0);
+    padding-right: 5rem;
+}
+
+.tituloC{
+    text-align: left;
+    font-size: 2rem;
+    width: 11vw;
+}
+
+.subtitulo{
+    text-align: left;
+    font-size: 1rem;
+}
+
+.right{
+    width: 80vw;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 footer{
@@ -64,3 +95,4 @@ footer{
     font-size: 80%;
     background-color: rgb(255,255,255);
 }
+/*Página index*/

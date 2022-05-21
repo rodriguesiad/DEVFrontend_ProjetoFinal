@@ -1,3 +1,7 @@
+html, body, .container{
+    height: 100%;
+}
+
 body{
     font-family: 'Raleway';
 }
@@ -39,49 +43,81 @@ header{
 /*Elementos comuns em todas as páginas*/
 
 main{
-    height: 100vh;
-    padding: 1rem 2.5rem 1rem 3rem;
+    height: inherit;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    
+    justify-content: center;
 }
 
 .container{
-    height: 100vh;
+    max-width: inherit;
+    width: inherit;
+    height: inherit;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: inherit;
+    align-items: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.row{
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    display: inherit;
+    align-items: inherit;
+    justify-content: space-between;
+    border: inherit;
+    margin: inherit;
+    padding: inherit;
 }
 
 .left{
-    width: 20vw;
     justify-content: center;
-
+    height: inherit;
+    display: inherit;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .titulo{
     box-sizing: border-box;
-    border-right: solid 2px rgb(0, 0, 0);
-    padding-right: 2rem;
+    width: 100%;
+    height: inherit;
+    margin: inherit;
+    border: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-titulo{
+    height: 50%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.colunaP{
+    border-right: solid 2px #000 ;
 }
 
 .tituloC{
     text-align: left;
     font-size: 2rem;
-    width: 11vw;
 }
-
 .subtitulo{
     text-align: left;
     font-size: 1rem;
 }
 
 .right{
-    width: 80vw;
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -97,22 +133,20 @@ footer{
 
 /*Página index*/
 .imagens-titulo{
-   width: 85%;
-   height: 3.5rem;
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: space-between;
+   width: 210px;
+   height: 4rem;
+   display: grid;
+   grid-template-columns: 70px 70px 70px;
    margin-top: 1rem;
-   padding-left: 0;
-}
-
-.logo{
-    width: 3.8rem;
-    height: inherit;
-    box-sizing: content-box;
-}
+   margin: inherit;
+   border: inherit;
+   box-sizing: border-box;
+   background-color: rgb(255,255,255);
+}  
 
 .i-html{
+    height: inherit;
+    box-sizing: content-box;
     background-image: url("../img/logo-html.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,6 +154,8 @@ footer{
 }
 
 .i-css{
+    height: inherit;
+    box-sizing: content-box;
     background-image: url("../img/logo-css.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,6 +163,8 @@ footer{
 }
 
 .i-js{
+    height: inherit;
+    box-sizing: content-box;
     background-image: url("../img/logo-js.jpg");
     background-repeat: no-repeat;
     background-size: cover;

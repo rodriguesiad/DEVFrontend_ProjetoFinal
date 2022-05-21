@@ -6,6 +6,13 @@ body{
     font-family: 'Raleway';
 }
 
+/* Ocultando barra de rolagem */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 /* Cabeçalho*/
 
 
@@ -21,7 +28,7 @@ body{
 
 .navbar-brand{
     margin-right: 3rem;
-    margin-left: 0.5%;
+    margin-left: 1.5%;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -35,6 +42,7 @@ body{
     height: 1.9rem;
     background-image: url(../img/logo.jpg);
     background-repeat: round;
+    margin-right: 1rem;
 }
 
 /*Elementos comuns em todas as páginas*/
@@ -110,6 +118,7 @@ main{
     align-items: inherit;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0 1rem 0 0.5rem;
 }
 
 footer{
@@ -169,6 +178,7 @@ a{
 .conteudo{
     width: 100%;
     margin: 0;
+    text-align: justify;
 }
 
 .inicio{

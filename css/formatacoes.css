@@ -41,7 +41,6 @@ header{
 }
 
 /*Elementos comuns em todas as páginas*/
-
 main{
     height: inherit;
     width: 100%;
@@ -49,11 +48,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
-.container{
-    max-width: inherit;
-    width: inherit;
+.container-fluid{
     height: inherit;
     box-sizing: border-box;
     display: inherit;
@@ -89,9 +87,11 @@ main{
     height: inherit;
     margin: inherit;
     border: inherit;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0;
 }
 
 .texto-titulo{

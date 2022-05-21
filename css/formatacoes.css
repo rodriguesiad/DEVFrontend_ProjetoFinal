@@ -94,12 +94,6 @@ main{
     padding: 0;
 }
 
-.texto-titulo{
-    height: 50%;
-    align-items: flex-start;
-    justify-content: center;
-}
-
 .colunaP{
     border-right: solid 2px #000 ;
 }

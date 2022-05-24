@@ -87,66 +87,83 @@
                 <div class="col-md-12 col-lg-3 left">
                     <div class="row titulo">
                         <div class="col-lg-12 col-md-12 colunaP">
-                            <h1 class="tituloC">Quem somos?</h1>
-                            <h2 class="subtitulo">Um pouco sobre nós</h2>
+                            <h1 class="tituloC">Entre em contato</h1>
+                            <h2 class="subtitulo">Preencha o formulário</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-9 right">
-                    <div class="perfil">
-                        <div class="container box-perfil position-relative">
-                            <div class="perfil-img1 position-absolute col-6 offset-3">
-                                <div class="foto1"></div>
-                            </div>
-                            <div class="top user1"></div>
-                            <div class="bottom">
-                                <h2 class="titulo-perfil">Esther Mota Reis</h2>
-                                <p class="conteudo-perfil idade">Idade: 17 anos</p>
-                                <p class="conteudo-perfil conteudo">
-                                    Técnica em Informática para Internet e
-                                    <br />Estudante de Sistemas de Informação na Universidade Estadual do
-                                    Tocantins(Unitins).
-                                </p>
-                                <div class="contato">
-                                    <ul class="icones-redes-sociais">
-                                        <li>
-                                            <a href="#" class="linkedin"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="github"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+
+                    <div class="container-fluid caixa-formulario">
+                <form autocomplete="off">
+                    <fieldset>
+                        <legend>Formulário para Contato</legend>
+                        <br>
+                        <div class="input">
+                            <input type="text" name="nome" id="nome" class="nome" required>
+                            <label for="nome">Nome completo</label>
                         </div>
-                        <div class="container box-perfil position-relative">
-                            <div class="perfil-img2 position-absolute col-6 offset-3">
-                                <div class="foto2"></div>
-                            </div>
-                            <div class="top user2" id="perfil2"></div>
-                            <div class="bottom">
-                                <h2 class="titulo-perfil">Iad Rodrigues Moraes</h2>
-                                <p class="conteudo-perfil idade">Idade: 18 anos</p>
-                                <p class="conteudo-perfil conteudo">
-                                    Técnica em Informática para Internet e
-                                    <br />Estudante de Sistemas de Informação na Universidade Estadual do
-                                    Tocantins(Unitins).
-                                </p>
-                                <div class="contato">
-                                    <ul class="icones-redes-sociais">
-                                        <li>
-                                            <a href="linkedin.com/in/iad-rodrigues-moraes-6b05b5234" class="linkedin"></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/rodriguesiad" class="github"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <br>
+                        <div class="input">
+                            <input type="email" name="email" id="email" class="email" required>
+                            <label for="email">Email</label>
                         </div>
+                        <br>
+                        <div class="input">
+                            <input type="text" data-mask="celular" name="celular" id="celular" class="celular" required>
+                            <label for="celular">Celular</label>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <input type="text" data-mask="telefone" name="telefone" id="telefone" class="telefone">
+                            <label for="telefone">Telefone</label>
+                        </div>
+                        <br>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado" class="local">
+                            <option></option> 
+                        </select>
+                        <label for="cidade">&nbsp&nbsp&nbsp&nbspCidade:</label>
+                        <select name="cidade" id="cidade" class="local">                                                    
+                        </select>
+                        <br><br>
+                        <div class="input">
+                            <label for="data_nascimento">Data de nascimento:&nbsp</label>
+                            <input type="date" name="data_nascimento" id="data_nascimento" class="data_nascimento">
+                        </div>
+                        <br>
+                        <label>Sexo:&nbsp</label>
+                        <input type="radio" name="genero" id="feminino" class="genero" required>
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="genero" id="masculino" class="genero" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="outro" class="genero" required>
+                        <label for="outro">Outro</label>
+                        <br><br>
+                        <label>Motivo do contato:&nbsp</label>
+                        <input type="radio" name="motivo" id="duvida" class="motivo" required>
+                        <label for="duvida">Dúvida</label>
+                        <input type="radio" name="motivo" id="elogio" class="motivo" required>
+                        <label for="elogio">Elogio</label>
+                        <input type="radio" name="motivo" id="outro" class="motivo" required>
+                        <label for="outro">Outro</label>
+                        <br><br>
+                        <div class="input">
+                            <textarea cols="30" maxlength="300" name="motivo" id="motivo" value="motivo"></textarea>
+                        </div>   
+                        <br>               
+                    </fieldset>
+                    <div class="container-botao">
+                        <button type="submit" name="botao" id="botao">Cadastrar</button>
                     </div>
+                    <br><br>
+                </form>
+            </div>
                 </div>
+            </div>
+        </div>
     </main>
+    <script type="text/javascript" src="js/cidadesEstados.js"></script>
     <footer>
         &copy; Esther e Iad
     </footer>

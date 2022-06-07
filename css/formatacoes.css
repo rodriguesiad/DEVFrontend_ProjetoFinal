@@ -139,6 +139,14 @@ footer {
     box-sizing: border-box;
     font-size: 80%;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+footer > a {
+    text-decoration: none;
 }
 
 /*Página index*/
@@ -191,8 +199,8 @@ a {
     text-align: justify;
 }
 
-.conteudo:not(.box){
-    padding-bottom: 1rem;
+.conteudo:not(.box, .conteudo-perfil){
+    padding-bottom: 1.5rem;
 }
 
 .inicio {
@@ -408,7 +416,7 @@ li {
 
 .poster {
     width: 100%;
-    height: 296px;
+    height: 70%;
 }
 
 

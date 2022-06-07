@@ -25,10 +25,17 @@ body {
     padding-bottom: 0.7rem;
 }
 
+
 .navbar-brand {
-    margin-right: 3rem;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-right: 0.1rem;
+}
+
+.navbar-img{
+    margin-bottom: 0.29rem;
+    padding: inherit;
+    margin-right: 3rem;
 }
 
 .nav-item {

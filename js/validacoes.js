@@ -66,3 +66,25 @@ document.body.onmouseover = function abrirModal() {
 document.body.onmouseout = function fecharModal() {
     document.getElementById('modal').style.display = "none"
 }
+
+$(document).ready(function(){
+    $('[data-mask="celular"]').mask('(00)00000-0000');
+});
+$(document).ready(function(){
+    $('[data-mask="telefone"]').mask('(00)0000-0000');
+});
+
+function validarCamposObrigatorios () {
+    var nome = document.getElementById("nome")
+    var email = document.getElementById("email")
+    var celular = document.getElementById("celular")
+    var estado = document.getElementById("estado")
+    var cidade = document.getElementById("cidade")
+    var data_nascimento = document.getElementById("data_nascimento")
+    var motivo = document.getElementById("motivo")
+
+    if (nome.value == "" || email.value == "" || celular.value == "" || estado.value == ""
+    || cidade.value == "" || data_nascimento.value == "" || motivo.value == "")  {
+        alert("Preencha os campos necessários")
+    }
+}
